@@ -1,6 +1,7 @@
 package coins
 
 import (
+	"blockbook/bchain/coins/sin"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -86,6 +87,7 @@ func init() {
 	BlockChainFactories["Dogecoin"] = dogecoin.NewDogecoinRPC
 	BlockChainFactories["Vertcoin"] = vertcoin.NewVertcoinRPC
 	BlockChainFactories["Vertcoin Testnet"] = vertcoin.NewVertcoinRPC
+        BlockChainFactories["Sinovate"] = sin.NewSinovateRPC
 	BlockChainFactories["Namecoin"] = namecoin.NewNamecoinRPC
 	BlockChainFactories["Monacoin"] = monacoin.NewMonacoinRPC
 	BlockChainFactories["Monacoin Testnet"] = monacoin.NewMonacoinRPC
